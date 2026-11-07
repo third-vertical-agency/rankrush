@@ -9,19 +9,21 @@ export default function Home() {
   const streak = 0;
 
   return (
-    <div className="px-2">
+    <div className="px-4">
       <header className="mb-6 flex items-center justify-between gap-3 py-4">
         <Link to="/" className="flex items-center">
-          <img src="/text-logo.svg" alt="RankRush" className="h-7 w-auto" />
+          <img src="/text-logo.svg" alt="RankRush" className="h-8 w-auto" />
         </Link>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <div
             title={`${streak}-day streak`}
-            className="flex items-center gap-1.5 rounded-full bg-orange-500/10 px-2.5 py-1 text-orange-600 dark:text-orange-400"
+            className="flex h-10 items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-3.5 text-orange-600 dark:text-orange-400"
           >
-            <Flame className="h-4 w-4 fill-current" />
-            <span className="text-sm font-semibold tabular-nums">{streak}</span>
+            <Flame className="h-5 w-5 fill-current" strokeWidth={2.25} />
+            <span className="text-base font-bold tabular-nums leading-none">
+              {streak}
+            </span>
           </div>
 
           <ThemeToggle />
