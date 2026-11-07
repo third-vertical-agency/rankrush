@@ -9,8 +9,8 @@ export default function Home() {
   const streak = 0;
 
   return (
-    <div className="px-4 pt-8">
-      <header className="mb-6 flex items-center justify-between gap-3">
+    <div className="px-2">
+      <header className="mb-6 flex items-center justify-between gap-3 py-4">
         <Link to="/" className="flex items-center">
           <img src="/text-logo.svg" alt="RankRush" className="h-7 w-auto" />
         </Link>
