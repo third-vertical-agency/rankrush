@@ -65,8 +65,8 @@ export default function IndiaMap({
       <Canvas
         orthographic
         camera={{
-          position: [-60, -10, 100],
-          zoom: 9,
+          position: [0, 0, 100],
+          zoom: 1,
           near: 0.1,
           far: 1000,
         }}
