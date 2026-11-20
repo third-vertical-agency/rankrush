@@ -11,7 +11,9 @@ export default function MapCamera() {
     camera.bottom = -size.height / 2;
 
     camera.position.set(0, 0, 100);
-    camera.zoom = 1;
+
+    // Do not reset camera.zoom here.
+    // Let IndiaMap control the zoom.
 
     camera.updateProjectionMatrix();
   }, [camera, size]);
